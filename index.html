@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket Plus - Compras inteligentes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Super<span>Market</span> Plus</a>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <a href="#" class="btn btn-outline">Iniciar Sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Bienvenido a SuperMarket Plus</h1>
+                <p class="hero-description">Tu destino para compras inteligentes con los mejores precios y calidad garantizada</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Ver productos</a>
+                    <a href="#ofertas" class="btn btn-outline">Ofertas especiales</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.ibb.co/mr3bqmZV/depositphotos-149690228-stock-illustration-people-shopping-at-supermarket.webp" 
+                alt="Personas comprando en supermercado" 
+                     loading="lazy"
+                     class="hero-main-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="section-subtitle">Descubre nuestra selección de productos frescos y de alta calidad</p>
+            <div class="products-grid" id="products-container">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="section offers" id="ofertas">
+        <div class="container">
+            <div class="offer-header">
+                <h2 class="section-title">Ofertas Especiales</h2>
+                <div class="offer-timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="countdown">24:59:32</span>
+                </div>
+            </div>
+            <div class="offer-slider" id="offers-container">
+                <!-- Las ofertas se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section" id="categorias">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <p class="section-subtitle">Explora por tus productos favoritos</p>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🍎</div>
+                    <h3 class="category-title">Frutas y Verduras</h3>
+                    <p class="category-description">Frescas y de temporada</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥩</div>
+                    <h3 class="category-title">Carnes y Pescados</h3>
+                    <p class="category-description">Calidad premium</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥛</div>
+                    <h3 class="category-title">Lácteos y Huevos</h3>
+                    <p class="category-description">Frescura garantizada</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍝</div>
+                    <h3 class="category-title">Despensa</h3>
+                    <p class="category-description">Todos los básicos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values" id="valores">
+        <div class="container">
+            <h2 class="section-title">Nuestros Valores</h2>
+            <p class="section-subtitle">Lo que nos hace diferentes</p>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🚚</div>
+                    <h3 class="value-title">Entrega en 24h</h3>
+                    <p class="value-description">Recibe tus productos frescos al día siguiente</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💰</div>
+                    <h3 class="value-title">Precios bajos</h3>
+                    <p class="value-description">Si encuentras más barato, te igualamos el precio</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">✅</div>
+                    <h3 class="value-title">Productos frescos</h3>
+                    <p class="value-description">Calidad premium en todos nuestros productos</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">♻</div>
+                    <h3 class="value-title">Envases sostenibles</h3>
+                    <p class="value-description">Comprometidos con el medio ambiente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SuperMarket Plus</h3>
+                    <p>Los mejores productos para tu hogar al mejor precio.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Nuestras Tiendas</a></li>
+                        <li><a href="#">Trabaja con Nosotros</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Mi Cuenta</h3>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Historial de pedidos</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Boletín de ofertas</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@supermarketplus.com</li>
+                        <li><i class="fas fa-clock"></i> Lunes a Domingo: 8:00 - 22:00</li>
+                    </ul>
+                    <div class="payment-methods">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" loading="lazy">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" loading="lazy">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express" loading="lazy">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SuperMarket Plus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
